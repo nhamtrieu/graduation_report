@@ -66,12 +66,39 @@ Dưới đây là đánh giá về các ứng dụng này để tìm hiểu về
 
 \subsection{Biểu đồ use case tổng quát}
 \label{subsection:2.2.1}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Hinhve/Usecase_tong_quan.png}
+    \caption{Biểu đồ use case tổng quát}
+    \label{fig:use_case_total}
+\end{figure}
+Hệ thống gồm 2 tác nhân là User và Driver.
+Để sử dụng các chức năng trong ứng dụng thì cả user và driver đều cần đăng nhập bằng số điện thoại và mật khẩu.
+Hệ thống bao gồm các usecase chính sau (i) usecase xác thực: xử lý việc đăng nhập, đăng ký của người dùng; 
+(ii) usecase đặt tài xế: tìm kiếm địa điểm, xem giá cước, chọn phương tiện, đặt tài xế;
+(iii) usecase xem lịch sử: người dùng xem lại lịch sử các chuyến đi của mình;
+(iv) usecase nhận chuyến: tài xế nhận được thông tin về chuyến đi, nhận hoặc hủy chuyến
 
-\subsection{Biểu đồ use case phân rã XYZ}
+
+\subsection{Biểu đồ use case phân rã Xác thực}
 \label{subsection:2.2.2}
-Với mỗi use case mức cao trong biểu đồ use case tổng quan, sinh viên tạo một mục riêng như mục \ref{subsection:2.2.2} và tiến hành phân rã use case đó. Lưu ý tên use case cần phân rã trong biểu đồ use case tổng quan phải khớp với tên đề mục.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Hinhve/Usecase_xac_thuc.png}
+  \caption{Biểu đồ usecase Xác thực}
+  \label{fig:use_case_xac_thuc}
+\end{figure}
+Usecase Xác thực bao gồm những chức năng chính sau (i) đăng nhập: người dùng nhập số điện thoại và mật khẩu để đăng nhập vào hệ thống, (ii) đăng ký: người dùng nhập các thông tin bắt buộc để đăng ký, (iii) đăng xuất: Đăng xuất khỏi tài khoản đang được đăng nhập, (iv) xóa tài khoản: người dùng xóa tài khoản của mình và phải đăng ký hoặc đăng nhập tài khoản khác để sử dụng hệ thống, (v) thay đổi thông tin cá nhân: thay đổi các thông tin như họ tên, email, mật khẩu.
 
-Trong mỗi mục như vậy, sinh viên vẽ và giải thích ngắn gọn các use case phân rã.
+\subsection{Biểu đồ use case phân rã Đặt tài xế}
+\label{subsection:2.2.3}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Hinhve/Usecase_dat_tai_xe.png}
+  \caption{Biểu đồ usecase Đặt tài xế}
+  \label{fig:use_case_dat_tai_xe}
+\end{figure}
+Usecase Đặt tài xế bao gồm những chức năng chính sau (i) tìm kiếm địa điểm: người dùng nhập địa điểm để tìm kiếm, (ii) xem giá cước: người dùng xem giá cước của các chuyến đi, (iii) chọn phương tiện: người dùng chọn phương tiện để đặt chuyến, (iv) tìm tài xế: người dùng tìm kiếm tài xế cho chuyến đi, (v) thêm phương tiện: người dùng thêm phương tiện họ cần lái hộ, (vi) chọn phương tiện: người dùng chọn phương tiện cần lái hộ
 
 \subsection{Quy trình nghiệp vụ}
 \label{subsection:2.2.3}
