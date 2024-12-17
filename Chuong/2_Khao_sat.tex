@@ -1,0 +1,96 @@
+\documentclass[../DoAn.tex]{subfiles}
+\begin{document}
+Chương này có độ dài từ 9 đến 11 trang.
+
+Với phương pháp phân tích thiết kế hướng đối tượng, sinh viên sử dụng biểu đồ use case theo hướng dẫn của template này. Với các phương pháp khác, sinh viên trao đổi với giáo viên hướng dẫn để đổi tên và sắp xếp lại đề mục cho phù hợp. Ví dụ, thay vì sử dụng biểu đồ use case, sinh viên đi theo hướng tiếp cận Agile có thể dùng User Story.
+
+
+\textbf{Lưu ý}: Mỗi chương nên có thêm 1 đoạn mở đầu chương và kết thúc chương, mở đầu giới thiệu những nội dung sẽ trình bày trong chương, kết thúc tổng kết lại các nội dung đã trình bày
+
+\section{Khảo sát hiện trạng}
+\label{section:2.1}
+
+Hiện nay trên thị trường đã có một số ứng dụng hỗ trợ việc tìm và đặt người lái hộ như: FastGo, ViSafe, GOCheap,...
+Dưới đây là đánh giá về các ứng dụng này để tìm hiểu về các tính năng cũng như hạn chế của chúng:
+
+\textbf{FastGo}: FastGo là một trong những ứng dụng thuê lái xe hộ khi say được yêu thích hiện nay. 
+Được phát triển bởi công ty cổ phần FastGo Việt Nam, app này cung cấp dịch vụ lái xe chuyên nghiệp và an toàn cho người sử dụng.
+\begin{itemize}
+    \item Ưu điểm:
+      \begin{itemize}
+        \item Giao diện đơn giản, dễ sử dụng
+        \item Bảo mật thông tin cá nhân
+        \item Tính năng đặt xe và theo dõi hành trình dễ dàng
+        \item Hỗ trợ khách hàng 24/7
+      \end{itemize}
+    \item Hạn chế:
+      \begin{itemize}
+        \item Cần phải kết nối mạng ổn định
+        \item Không có tính năng đón khách
+      \end{itemize}
+\end{itemize}
+
+\textbf{ViSafe}: ViSafe là một ứng dụng thuê lái xe hộ khi say được phát triển bởi Công ty Cổ Phần An Toàn Giao Thông Việt Nam. App này nhắm đến việc cung cấp dịch vụ an toàn và chất lượng cho người sử dụng.
+\begin{itemize}
+    \item Ưu điểm:
+      \begin{itemize}
+        \item Giao diện đơn giản, dễ sử dụng
+        \item Bảo mật thông tin cá nhân
+        \item Hỗ trợ khách hàng 24/7
+        \item Đa dạng tính năng
+      \end{itemize}
+    \item Hạn chế:
+      \begin{itemize}
+        \item Không có tính năng theo dõi hành trình
+      \end{itemize}
+\end{itemize}
+
+\textbf{GOCheap}: GOCheap là một trong những app đặt lái xe hộ khi say tuyệt vời nhất ở thời điểm hiện tại. Ứng dụng này được phát triển và quản lý bởi Công ty TNHH GOCheap. Ứng dụng này nhắm đến mục tiêu cung cấp dịch vụ thuê lái xe hộ chất lượng và uy tín nhất cho người dùng.
+\begin{itemize}
+    \item Ưu điểm:
+      \begin{itemize}
+        \item Tiện lợi, nhanh chóng
+        \item Dịch vụ chất lượng
+        \item Bảo mật tốt
+        \item Hỗ trợ 24/7
+      \end{itemize}
+    \item Hạn chế:
+      \begin{itemize}
+        \item Giao diện chưa không thân thiện
+      \end{itemize}
+\end{itemize}
+
+
+\section{Tổng quan chức năng}
+\label{section:2.2}
+
+\subsection{Biểu đồ use case tổng quát}
+\label{subsection:2.2.1}
+
+\subsection{Biểu đồ use case phân rã XYZ}
+\label{subsection:2.2.2}
+Với mỗi use case mức cao trong biểu đồ use case tổng quan, sinh viên tạo một mục riêng như mục \ref{subsection:2.2.2} và tiến hành phân rã use case đó. Lưu ý tên use case cần phân rã trong biểu đồ use case tổng quan phải khớp với tên đề mục.
+
+Trong mỗi mục như vậy, sinh viên vẽ và giải thích ngắn gọn các use case phân rã.
+
+\subsection{Quy trình nghiệp vụ}
+\label{subsection:2.2.3}
+Nếu sản phẩm/hệ thống cần xây dựng có quy trình nghiệp vụ quan trọng/đáng chú ý, sinh viên cần mô tả và vẽ biểu đồ hoạt động minh họa quy trình nghiệp vụ đó. Sinh viên lưu ý đây không phải là luồng sự kiện của từng use case, mà là luồng hoạt động kết hợp nhiều use case để thực hiện một nghiệp vụ nào đó.
+
+Ví dụ, một hệ thống quản lý thư viện có quy trình nghiệp vụ mượn trả với mô tả sơ bộ như sau: Sinh viên làm thẻ mượn, sau đó sinh viên đăng ký mượn sách, thủ thư cho mượn, và cuối cùng sinh viên trả lại sách cho thư viện. Một hệ thống có thể có một vài quy trình nghiệp vụ quan trọng như vậy.
+\section{Đặc tả chức năng}
+\label{section:2.3}
+Sinh viên lựa chọn từ 4 đến 7 use case quan trọng nhất của đồ án để đặc tả chi tiết. Mỗi đặc tả bao gồm ít nhất các thông tin sau: (i) Tên use case, (ii) Luồng sự kiện (chính và phát sinh), (iii) Tiền điều kiện, và (iv) Hậu điều kiện. Sinh viên chỉ vẽ bổ sung biểu đồ hoạt động khi đặc tả use case phức tạp.
+\subsection{Đặc tả use case A}
+\hfill
+\subsection{Đặc tả use case B}
+\hfill
+
+\section{Yêu cầu phi chức năng}
+\label{section:2.4}
+Trong phần này, sinh viên đưa ra các yêu cầu khác nếu có, bao gồm các yêu cầu phi chức năng như hiệu năng, độ tin cậy, tính dễ dùng, tính dễ bảo trì, hoặc các yêu cầu về mặt kỹ thuật như về CSDL, công nghệ sử dụng, v.v.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
