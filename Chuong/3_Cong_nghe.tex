@@ -1,17 +1,106 @@
 \documentclass[../DoAn.tex]{subfiles}
 \begin{document}
+\section{Flutter}
+\label{section:3.1}
 
-Chương này có độ dài không quá 10 trang. Nếu cần trình bày dài hơn, sinh viên đưa vào phần phụ lục. Chú ý đây là kiến thức đã có sẵn; SV sau khi tìm hiểu được thì phân tích và tóm tắt lại. Sinh viên không trình bày dài dòng, chi tiết. 
+\subsection{Giới thiệu}
+\label{subsection:3.1.1}
+Flutter là một framework phát triển giao diện người dùng (UI)
+ mã nguồn mở do Google phát triển. Nó cho phép xây dựng các ứng dụng
+ đa nền tảng (cross-platform) từ một cơ sở mã duy nhất. Flutter sử dụng
+ ngôn ngữ lập trình Dart và cung cấp một bộ widget phong phú để tạo 
+ giao diện người dùng đẹp mắt và linh hoạt.
 
-Với đồ án ứng dụng, sinh viên để tên chương là “Công nghệ sử dụng”. Trong chương này, sinh viên giới thiệu về các công nghệ, nền tảng sử dụng trong đồ án. Sinh viên cũng có thể trình bày thêm nền tảng lý thuyết nào đó nếu cần dùng tới.
+Flutter được sử dụng để phát triển ứng dụng di động (Android, iOS), 
+ứng dụng web, và thậm chí cả ứng dụng desktop (Windows, MacOS, Linux).
 
-Với đồ án nghiên cứu, sinh viên đổi tên chương thành “Cơ sở lý thuyết”. Khi đó, nội dung cần trình bày bao gồm: Kiến thức nền tảng, cơ sở lý thuyết, các thuật toán, phương pháp nghiên cứu, v.v.
+\subsection{Mục đích sử dụng}
+\label{subsection:3.1.2}
+Trong dự án này Flutter được sử dụng để xây dựng UI cho các màn hình
+của ứng dụng.
 
-Với từng công nghệ/nền tảng/lý thuyết được trình bày, sinh viên phải phân tích rõ công nghệ/nền tảng/lý thuyết đó dùng để để giải quyết vấn đề/yêu cầu cụ thể nào ở Chương 2. Hơn nữa, với từng vấn đề/yêu cầu, sinh viên phải liệt kê danh sách các công nghệ/hướng tiếp cận tương tự có thể dùng làm lựa chọn thay thế, rồi giải thích rõ sự lựa chọn của mình.
+\subsection{Ưu -  Nhược điểm}
+\label{subsection:3.1.3}
+1. Ưu điểm
+\begin{itemize}
+  \item Phát triển đa nền tảng: Với mã nguồn duy nhất, Flutter cho phép phát triển ứng dụng cho nhiều nền tảng, giảm thời gian và công sức cho việc phát triển và bảo trì.
+  \item Hiệu suất cao: Flutter biên dịch mã trực tiếp sang mã máy (native) thông qua Dart's Ahead-of-Time (AOT) compilation, đảm bảo hiệu suất gần như ứng dụng gốc (native).
+  \item Giao diện đẹp và linh hoạt: Flutter cung cấp một bộ widget phong phú, được tùy chỉnh cao, giúp tạo ra giao diện người dùng đẹp mắt và đồng nhất trên các nền tảng.
+  \item Cộng đồng phát triển mạnh mẽ: Flutter có một cộng đồng rộng lớn và tài liệu phong phú, giúp hỗ trợ giải quyết vấn đề nhanh chóng.
+\end{itemize}
 
-Lưu ý: Nội dung ĐATN phải có tính chất liên kết, liền mạch, và nhất quán. Vì vậy, các công nghệ/thuật toán trình bày trong chương này phải khớp với nội dung giới thiệu của sinh viên ở phần trước đó. 
+2. Nhược điểm
+\begin{itemize}
+  \item Dung lượng ứng dụng lớn: Các ứng dụng Flutter thường có dung lượng lớn hơn so với ứng dụng native, đặc biệt khi so với ứng dụng iOS.
+  \item Thiếu một số thư viện native: Một số tính năng hoặc thư viện native cần phải được phát triển thêm bằng cách viết mã native (Android: Kotlin/Java, iOS: Swift/Objective-C).
+  \item Hỗ trợ native không đầy đủ: Mặc dù Flutter cung cấp rất nhiều tính năng, nhưng với các ứng dụng cần tích hợp sâu vào hệ điều hành (như sử dụng Bluetooth, cảm biến), sẽ phải viết mã native thủ công.
+\end{itemize}
 
-Trong chương này, để tăng tính khoa học và độ tin cậy, sinh viên nên chỉ rõ nguồn kiến thức mình thu thập được ở tài liệu nào, đồng thời đưa tài liệu đó vào trong danh sách tài liệu tham khảo rồi tạo các tham chiếu chéo (xem hướng dẫn ở phụ lục A.7).
+\section{NestJS}
+\label{section:3.2}
+\subsection{Giới thiệu}
+\label{subsection:3.2.1}
+NestJS là một framework mạnh mẽ để xây dựng ứng dụng phía server (backend) trong Node.js. Nó được xây dựng trên nền tảng của TypeScript và sử dụng các concept phổ biến từ Angular như Dependency Injection, Decorators, và Modularity. NestJS kết hợp các đặc điểm tốt nhất của các framework hiện có (như Express hoặc Fastify) và cung cấp một cấu trúc ứng dụng rõ ràng, dễ mở rộng.
 
+\subsection{Mục đích sử dụng}
+\label{subsection:3.2.2}
+\begin{itemize}
+  \item NestJS được sử dụng để viết các API cho ứng dụng
+  \item Kết hợp với Firebase, API của Google Map Platform để xây dựng các dịch vụ backend
+\end{itemize}
+
+\subsection{Ưu -  Nhược điểm}
+\label{subsection:3.2.3}
+1. Ưu điểm
+\begin{itemize}
+  \item Kiến trúc module rõ ràng, dễ mở rộng: NestJS cung cấp cấu trúc module có tổ chức, giúp phát triển và bảo trì code dễ dàng hơn.
+  \item Hỗ trợ TypeScript: NestJS được xây dựng trên TypeScript, giúp phát triển ứng dụng một cách an toàn và hiệu quả hơn.
+  \item Dependency Injection: NestJS sử dụng Dependency Injection để quản lý các dependencies giữa các module và services, giúp code trở nên linh hoạt và dễ dàng trong việc kiểm thử phần mềm.
+  \item Cộng đồng và tài liệu phong phú: NestJS có một cộng đồng đông đảo và tài liệu chính thức chi tiết giúp lập trình viên học tập và triển khai 1 cách dễ dàng.
+\end{itemize}
+
+2. Nhược điểm
+\begin{itemize}
+  \item Khó tiếp cận với người mới bắt đầu: Cấu trúc module, dependency injection và các khái niệm khác của NestJS có thể gây khó khăn cho người mới bắt đầu.
+  \item Kích thước bundle: Do sử dụng TypeScript và nhiều tính năng, kích thước bundle của ứng dụng NestJS có thể lớn hơn so với các ứng dụng sử dụng các framework nhẹ hơn.
+\end{itemize}
+
+\section{Firebase}
+\label{section:3.3}
+
+\subsection{Giới thiệu}
+\label{subsection:3.3.1}
+Firebase là một nền tảng phát triển ứng dụng di động và web do Google 
+cung cấp. Nó cung cấp nhiều dịch vụ đám mây (Backend-as-a-Service) 
+giúp các nhà phát triển tập trung vào việc xây dựng ứng dụng mà không 
+cần quản lý cơ sở hạ tầng phía sau. Firebase cung cấp nhiều tính năng 
+như xác thực người dùng, cơ sở dữ liệu thời gian thực, lưu trữ đám mây, 
+phân tích và nhiều dịch vụ khác.
+
+\subsection{Mục đích sử dụng}
+\label{subsection:3.3.2}
+Trong dự án này, Firebase được sử dụng để:
+\begin{itemize}
+  \item Realtime Database: Lưu trữ và quản lý dữ liệu thời gian thực
+  \item Cloud Storage: Lưu trữ và quản lý files và hình ảnh
+  \item Cloud Messaging: Gửi thông báo đẩy (push notifications) đến người dùng
+\end{itemize}
+
+\subsection{Ưu -  Nhược điểm}
+\label{subsection:3.3.3}
+1. Ưu điểm
+\begin{itemize}
+  \item Phát triển nhanh chóng: Firebase cung cấp nhiều dịch vụ được xây dựng sẵn, giúp giảm thời gian phát triển ứng dụng.
+  \item Khả năng mở rộng: Firebase được xây dựng trên cơ sở hạ tầng của Google, cho phép ứng dụng dễ dàng mở rộng quy mô.
+  \item Bảo mật cao: Được hỗ trợ bởi Google với các tính năng bảo mật mạnh mẽ
+  \item Hỗ trợ đa nền tảng: Firebase hỗ trợ phát triển ứng dụng cho nhiều nền tảng như iOS, Android và web.
+\end{itemize}
+
+2. Nhược điểm
+\begin{itemize}
+  \item Giá thành cao: Firebase có giá thành cao, đặc biệt là với các dịch vụ nâng cao.
+  \item Phụ thuộc vào Google: Hoàn toàn phụ thuộc vào hạ tầng của Google
+  \item Tính linh hoạt hạn chế: Không thể tùy chỉnh sâu như các giải pháp backend tự xây dựng
+\end{itemize}
 
 \end{document}
