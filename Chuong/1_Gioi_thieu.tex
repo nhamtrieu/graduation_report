@@ -3,44 +3,42 @@
 
 \section{Đặt vấn đề}
 \label{section:1.1}
-Khi đặt vấn đề, sinh viên cần làm nổi bật mức độ cấp thiết, tầm quan trọng và/hoặc quy mô của bài toán của mình.
+Trong những năm gần đây, tình trạng tai nạn giao thông liên quan đến việc sử dụng rượu bia đã trở thành một vấn đề nhức nhối không chỉ ở Việt Nam mà còn trên toàn thế giới. Việc sử dụng rượu bia làm suy giảm khả năng tập trung, giảm phản xạ và làm mất kiểm soát hành vi, dẫn đến nguy cơ cao xảy ra tai nạn giao thông nghiêm trọng.
+Vấn đề này đặt ra yêu cầu cấp thiết về việc nghiên cứu và triển khai các giải pháp nhằm giảm thiểu tai nạn giao thông liên quan đến rượu bia, hướng tới xây dựng một môi trường giao thông an toàn và văn minh.
 
-Gợi ý cách trình bày cho sinh viên: Xuất phát từ tình hình thực tế gì, dẫn đến vấn đề hoặc bài toán gì. Vấn đề hoặc bài toán đó, nếu được giải quyết, đem lại lợi ích gì, cho những ai, còn có thể được áp dụng vào các lĩnh vực khác nữa không. Sinh viên cần lưu ý phần này chỉ trình bày vấn đề, tuyệt đối không trình bày giải pháp.
-
+Do đó em quyết định phát triển ứng dụng lái xe hộ - VISAFE BK - trên nền tảng
+Android để giải quyết các vấn đề liên quan đến việc lái xe cho người dùng
+khi sử dụng các đồ uống có cồn.
+Hiện nay đã có một số ứng dụng giúp đặt tài xế lái hộ tuy nhiên các ứng dụng này còn một số nhược điểm như: giao diện phức tạp, không tiện lợi cho việc theo dõi di chuyển.
+Vì vậy ứng dụng này sẽ cung cấp tìm kiếm tài xế lái hộ cho người dùng một cách nhanh chóng, hiệu quả và tiện lợi.
 \section{Mục tiêu và phạm vi đề tài}
 \label{section:1.2}
-Sinh viên trước tiên cần trình bày tổng quan các kết quả của các nghiên cứu hiện nay cho bài toán giới thiệu ở phần \ref{section:1.1} (đối với đề tài nghiên cứu), hoặc về các sản phẩm hiện tại/về nhu cầu của người dùng (đối với đề tài ứng dụng). Tiếp đến, sinh viên tiến hành so sánh và đánh giá tổng quan các sản phẩm/nghiên cứu này.
+Dựa trên những vấn đề đã nêu ở trên, mục tiêu của dự án này lá xây dựng một ứng dụng giúp đơn giản hóa quá trình tìm kiếm và kết nối giữa người cần tài xế lái xe hộ và các tài xế sẵn sàng hỗ trợ.
+Mục tiêu cốt lõi của ứng dụng bao gồm
+\begin{itemize}
+  \item Cải thiện trải nghiệm người dùng: Tối ưu hóa giao diện và chức năng để người dùng dễ dàng đặt tài xế trong vài bước đơn giản.
+  \item Nâng cao mức độ an toàn: Sử dụng công nghệ định vị GPS, theo dõi hành trình và hệ thống đánh giá tài xế để đảm bảo sự an tâm.
+  \item Tạo giá trị cộng đồng: Góp phần giảm thiểu nguy cơ tai nạn giao thông trong các tình huống lái xe không an toàn (như say rượu, mệt mỏi).
+\end{itemize}
 
-Dựa trên các phân tích và đánh giá ở trên, sinh viên khái quát lại các hạn chế hiện tại đang gặp phải. Trên cơ sở đó, sinh viên sẽ hướng tới giải quyết vấn đề cụ thể gì, khắc phục hạn chế gì, phát triển phần mềm \textbf{có các chức năng chính gì}, tạo nên đột phá gì, v.v.
-
-Trong phần này, sinh viên lưu ý chỉ trình bày tổng quan, không đi vào chi tiết của vấn đề hoặc giải pháp. Nội dung chi tiết sẽ được trình bày trong các chương tiếp theo, đặc biệt là trong Chương 5.
 
 \section{Định hướng giải pháp}
 \label{section:1.3}
-Từ việc xác định rõ nhiệm vụ cần giải quyết ở phần \ref{section:1.2}, sinh viên đề xuất định hướng giải pháp của mình theo trình tự sau: (i) Sinh viên trước tiên trình bày sẽ giải quyết vấn đề theo định hướng, phương pháp, thuật toán, kỹ thuật, hay công nghệ nào; Tiếp theo, (ii) sinh viên mô tả ngắn gọn giải pháp của mình là gì (khi đi theo định hướng/phương pháp nêu trên); và sau cùng, (iii) sinh viên trình bày đóng góp chính của đồ án là gì, kết quả đạt được là gì.
+Để đạt được mục tiêu đề ra, ứng dụng sẽ được xây dựng dựa trên các giải pháp công nghệ hiện đại và chiến lược phát triển hợp lý. Ứng dụng sẽ được phát triển đa nền tảng bằng Flutter, đảm bảo hoạt động đồng nhất trên cả Android và iOS. Phần backend sử dụng NestJS với cấu trúc module hóa, tích hợp Firebase để cung cấp các tính năng thời gian thực như định vị, cập nhật trạng thái hành trình và lưu trữ dữ liệu người dùng. Hệ thống định vị Google Maps API sẽ được triển khai để hỗ trợ tìm kiếm địa điểm và theo dõi hành trình chính xác.
 
-Sinh viên lưu ý không giải thích hoặc phân tích chi tiết công nghệ/thuật toán trong phần này. Sinh viên chỉ cần nêu tên định hướng công nghệ/thuật toán, mô tả ngắn gọn trong một đến hai câu và giải thích nhanh lý do lựa chọn.
+Về trải nghiệm người dùng, ứng dụng sẽ được thiết kế với giao diện đơn giản, thân thiện, giúp người dùng dễ dàng thao tác. Sau mỗi chuyến đi, người dùng có thể đánh giá tài xế để cải thiện chất lượng dịch vụ.
+
+Để đảm bảo an toàn và minh bạch, ứng dụng sẽ yêu cầu tài xế và người dùng cung cấp thông tin cá nhân và giấy tờ liên quan để xác thực. Hành trình của người dùng sẽ được theo dõi theo thời gian thực. Thông tin tài xế và chuyến đi sẽ được lưu trữ trên Firebase, đảm bảo minh bạch và dễ dàng tra cứu khi cần.
 
 \section{Bố cục đồ án}
 \label{section:1.4}
-Phần còn lại của báo cáo đồ án tốt nghiệp này được tổ chức như sau. 
+Phần còn lại của báo cáo Đồ án tốt nghiệp này được tổ chức như sau: 
 
-Chương 2 trình bày về v.v. 
-
-Trong Chương 3, em/tôi giới thiệu về v.v.
-
-\textbf{Chú ý:} Sinh viên cần viết mô tả thành đoạn văn đầy đủ về nội dung chương. Tuyệt đối không viết ý hay gạch đầu dòng. Chương 1 không cần mô tả trong phần này. 
-
-Ví dụ tham khảo mô tả chương trong phần bố cục đồ án tốt nghiệp: Chương *** trình bày đóng góp chính của đồ án, đó là một nền tảng ABC cho phép khai phá và tích hợp nhiều nguồn dữ liệu, trong đó mỗi nguồn dữ liệu lại có định dạng đặc thù riêng. Nền tảng ABC được phát triển dựa trên khái niệm DEF, là các module ngữ nghĩa trợ giúp người dùng tìm kiếm, tích hợp và hiển thị trực quan dữ liệu theo mô hình cộng tác và mô hình phân tán.
-
-\textbf{Chú ý:} Trong phần nội dung chính, mỗi chương của đồ án nên có phần Tổng quan và Kết chương. Hai phần này đều có định dạng văn bản “Normal”, sinh viên không cần tạo định dạng riêng, ví dụ như không in đậm/in nghiêng, không đóng khung, v.v. 
-
-Trong phần Tổng quan của chương N, sinh viên nên có sự liên kết với chương N-1 rồi trình bày sơ qua lý do có mặt của chương N và sự cần thiết của chương này trong đồ án. Sau đó giới thiệu những vấn đề sẽ trình bày trong chương này là gì, trong các đề mục lớn nào.
-
-Ví dụ về phần Tổng quan: Chương 3 đã thảo luận về nguồn gốc ra đời, cơ sở lý thuyết và các nhiệm vụ chính của bài toán tích hợp dữ liệu. Chương 4 này sẽ trình bày chi tiết các công cụ tích hợp dữ liệu theo hướng tiếp cận “mashup”. Với mục đích và phạm vi của đề tài, sáu nhóm công cụ tích hợp dữ liệu chính được trình bày bao gồm: (i) nhóm công cụ ABC trong phần 4.1, (ii) nhóm công cụ DEF trong phần 4.2, nhóm công cụ GHK trong phần 4.3, v.v.
-
-Trong phần Kết chương, sinh viên đưa ra một số kết luận quan trọng của chương. Những vấn đề mở ra trong Tổng quan cần được tóm tắt lại nội dung và cách giải quyết/thực hiện như thế nào. Sinh viên lưu ý không viết Kết chương giống hệt Tổng quan. Sau khi đọc phần Kết chương, người đọc sẽ nắm được sơ bộ nội dung và giải pháp cho các vấn đề đã trình bày trong chương. Trong Kết chương, Sinh viên nên có thêm câu liên kết tới chương tiếp theo.
-
-Ví dụ về phần Kết chương: Chương này đã phân tích chi tiết sáu nhóm công cụ tích hợp dữ liệu. Nhóm công cụ ABC và DEF thích hợp với những bài toán tích hợp dữ liệu phạm vi nhỏ. Trong khi đó, nhóm công cụ GHK lại chứng tỏ thế mạnh của mình với những bài toán cần độ chính xác cao, v.v. Từ kết quả nghiên cứu và phân tích về sáu nhóm công cụ tích hợp dữ liệu này, tôi đã thực hiện phát triển phần mềm tự động bóc tách và tích hợp dữ liệu sử dụng nhóm công cụ GHK. Phần này được trình bày trong chương tiếp theo – Chương 5.
-
+\begin{itemize}
+  \item \textbf{Chương 2:} Dựa trên những vấn đề đã được nêu ở Chương 1, chương này sẽ phân tích chi tiết các chức năng và yêu cầu mà ứng dụng cần có. Kết thúc chương, các tiêu chí chức năng cụ thể mà ứng dụng cần đáp ứng sẽ được phác thảo dựa trên phân tích này.
+  \item \textbf{Chương 3:} Trình bày chi tiết về các công nghệ được sử dụng trong ứng dụng cùng với mục đích và những ưu - nhược điểm của chúng.
+  \item \textbf{Chương 4:} Dựa trên các yêu cầu chức năng đã thiết lập từ Chương 2, chương này trình bày chi tiết thiết kế ứng dụng từ kiến trúc tổng thể đến các thành phần hệ thống cụ thể. Phần đầu chương sẽ giới thiệu kiến trúc tổng thể, phác thảo các thành phần và sự tương tác giữa chúng. Tiếp theo, chương đi sâu vào thiết kế chi tiết của từng thành phần, cung cấp sơ đồ minh họa và thông số kỹ thuật chức năng. Ngoài ra, chương cũng bao gồm thiết kế giao diện người dùng và cấu trúc dữ liệu của ứng dụng.
+  \item \textbf{Chương 5:} Chương này nêu bật những đóng góp cá nhân trong quá trình phát triển ứng dụng, trình bày các chức năng hoặc phương pháp cụ thể mà em đã trực tiếp triển khai.
+  \item \textbf{Chương 6:} Chương cuối cùng tóm tắt các khía cạnh đã hoàn thành của luận văn, bao gồm chức năng đã triển khai, công nghệ được sử dụng và thiết kế tổng thể của ứng dụng. Cuối chương sẽ thảo luận các hướng phát triển tiềm năng trong tương lai, phác thảo các tính năng hoặc chức năng có thể được bổ sung để nâng cao chất lượng ứng dụng.
+\end{itemize}
 \end{document}

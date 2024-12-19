@@ -115,11 +115,8 @@ Usecase Đặt tài xế bao gồm những chức năng chính sau (i) tìm ki�
 \end{figure}
 Usecase Nhận chuyến bao gồm những chức năng chính sau (i) xem thông tin về chuyến đi: tài xế xem thông tin về chuyến đi như giá cước, địa điểm, (ii) đồng ý nhận: tài xế chấp nhận chuyến xe này, (iii) không đồng ý nhận: tài xế không chấp nhận chuyến đi và bỏ qua chuyến đi.
 
-
-\subsection{Quy trình nghiệp vụ}
-\label{section:2.3}
 \subsection{Quy trình nghiệp vụ Tìm kiếm tài xế}
-\label{subsection:2.3.1}
+\label{subsection:2.2.6}
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{Hinhve/quy_trinh_nghiep_vu_tim_kiem_tai_xe.png}
@@ -130,19 +127,23 @@ Quy trình ở hình \ref{fig:quy_trinh_nghiep_vu_tim_kiem_tai_xe} mô tả nghi
 Người dùng có nhu cầu đặt lái hộ sẽ nhấn vào nút "Ô tô" trong phần "Dịch vụ lái xe hộ"
 ở màn hình chính. Hệ thống sẽ hiển thị giao diện chọn vị trí để người
 dùng chọn và nhập vị trí. Khi nhập vị trí, hệ thống sẽ hiển thị gợi ý vị
-trí mà người dùng muốn đến.Sau khi người dùng chọn vị trí xong thì sẽ nhấn vào nút "Tiếp tục" để gửi 
-dữ liệu tới server để thực hiện tính toán và trả về cho người dùng.
+trí mà người dùng muốn đến.Sau khi người dùng chọn vị trí xong thì sẽ nhấn vào nút 
+"Tiếp tục" để gửi dữ liệu tới server để thực hiện tính toán chi phí, quãng đường và trả về cho người dùng.
+Người dùng nhấn nút "Đặt tài xế", server sẽ truy vấn cơ sở dữ liệu tìm những tài xế
+phù hợp và gửi thông báo lần lượt cho các tài xế và chờ phản hồi từ tài xế đó.
+Nếu không có tài xế nào đồng ý thì thông báo không tìm được tài xế tới người dùng.
+Nếu có tài xế đồng ý thì chuyển sang màn hình chuyến đi để theo dõi tài xế di chuyển tới vị trí đón.
 
 
 \section{Đặc tả chức năng}
-\label{section:2.4}
-\subsection{Đặc tả Đặt tài xế}
-\label{subsection:2.4.1}
+\label{section:2.3}
+\subsection{Đặc tả use case Đặt tài xế}
+\label{subsection:2.3.1}
 
 \renewcommand{\arraystretch}{1.5}
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|} 
+\begin{tabular}{|l|p{0.8\textwidth}|} 
 \hline
 \textbf{Mã usecase}             & UC-1                                                             \\ \hline
 \textbf{Tên usecase}            & Đặt tài xế                                                       \\ \hline
@@ -160,10 +161,10 @@ dữ liệu tới server để thực hiện tính toán và trả về cho ngư
 \end{table}
   
 \subsection{Đặc tả use case Nhận chuyến}
-\label{subsection:2.4.2}
+\label{subsection:2.3.2}
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|l|p{0.8\textwidth}|}
 \hline
 \textbf{Mã usecase}    & UC-2                                               \\ \hline
 \textbf{Tên usecase}   & Nhận chuyến                                        \\ \hline
@@ -183,10 +184,10 @@ dữ liệu tới server để thực hiện tính toán và trả về cho ngư
 \end{table}
 
 \subsection{Đặc tả use case Tìm kiếm tài xế}
-\label{subsection:2.4.3}
+\label{subsection:2.3.3}
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|l|p{0.8\textwidth}|}
 \hline
 \textbf{Mã usecase}             & UC-3                                                                                                    \\ \hline
 \textbf{Tên usecase}            & Tìm kiếm tài xế                                                                                         \\ \hline
@@ -204,10 +205,10 @@ dữ liệu tới server để thực hiện tính toán và trả về cho ngư
 \end{table}
 
 \subsection{Đặc tả use case Chỉnh sửa thông tin}
-\label{subsection:2.4.4}
+\label{subsection:2.3.4}
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|l|p{0.8\textwidth}|}
 \hline
 \textbf{Mã usecase}             & UC-4                                                                                             \\ \hline
 \textbf{Tên usecase}            & Thay đổi thông tin cá nhân                                                                       \\ \hline
@@ -225,8 +226,16 @@ dữ liệu tới server để thực hiện tính toán và trả về cho ngư
 \end{table}
 
 \section{Yêu cầu phi chức năng}
-\label{section:2.5}
+\label{section:2.4}
 Trong phần này, sinh viên đưa ra các yêu cầu khác nếu có, bao gồm các yêu cầu phi chức năng như hiệu năng, độ tin cậy, tính dễ dùng, tính dễ bảo trì, hoặc các yêu cầu về mặt kỹ thuật như về CSDL, công nghệ sử dụng, v.v.
-
+\subsection{Yêu cầu về hoạt động}
+\label{2.4.1} Hệ thống hoạt động tốt trên các thiết bị Android 10 trở lên.
+Hệ thống có thể được truy cập từ bất kì đâu trên lãnh thổ Việt Nam
+\subsection{Yêu cầu về bảo mật}
+\label{2.4.2} Người dùng bắt buộc phải đăng nhập để có thể sử dụng hệ thống
+\subsection{Độ tin cậy, khả năng bảo trì}
+\label{2.4.3} Hệ thống không được tạo ra lỗi nghiêm trọng. Bất kỳ lỗi nào phài được khắc phục trong vòng 2 ngày
+\subsection{Trải nghiệm người dùng}
+\label{2.4.4} Hệ thống có giao diện trực quan và dễ sử dụng. Dữ liệu được hiển thị một cách rõ ràng, dễ hiểu
 
 \end{document}
