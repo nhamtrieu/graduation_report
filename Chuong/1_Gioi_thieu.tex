@@ -3,18 +3,28 @@
 
 \section{Đặt vấn đề}
 \label{section:1.1}
-Trong những năm gần đây, tình trạng tai nạn giao thông liên quan đến việc sử dụng rượu bia đã trở thành một vấn đề nhức nhối không chỉ ở Việt Nam mà còn trên toàn thế giới. Việc sử dụng rượu bia làm suy giảm khả năng tập trung, giảm phản xạ và làm mất kiểm soát hành vi, dẫn đến nguy cơ cao xảy ra tai nạn giao thông nghiêm trọng.
-Vấn đề này đặt ra yêu cầu cấp thiết về việc nghiên cứu và triển khai các giải pháp nhằm giảm thiểu tai nạn giao thông liên quan đến rượu bia, hướng tới xây dựng một môi trường giao thông an toàn và văn minh.
+Trong những năm gần đây, tình trạng tai nạn giao thông liên quan 
+đến việc sử dụng rượu bia đã trở thành một vấn đề nhức nhối không 
+chỉ ở Việt Nam mà còn trên toàn thế giới. Việc sử dụng rượu bia làm 
+suy giảm khả năng tập trung, giảm phản xạ và làm mất kiểm soát hành vi, 
+dẫn đến nguy cơ cao xảy ra tai nạn giao thông nghiêm trọng.
+Vấn đề này đặt ra yêu cầu cấp thiết về việc nghiên cứu và triển khai các 
+giải pháp nhằm giảm thiểu tai nạn giao thông liên quan đến rượu bia, hướng 
+tới xây dựng một môi trường giao thông an toàn và văn minh.
 
 Do đó em quyết định phát triển ứng dụng lái xe hộ - VISAFE BK - trên nền tảng
 Android để giải quyết các vấn đề liên quan đến việc lái xe cho người dùng
 khi sử dụng các đồ uống có cồn.
-Hiện nay đã có một số ứng dụng giúp đặt tài xế lái hộ tuy nhiên các ứng dụng này còn một số nhược điểm như: giao diện phức tạp, không tiện lợi cho việc theo dõi di chuyển.
-Vì vậy ứng dụng này sẽ cung cấp tìm kiếm tài xế lái hộ cho người dùng một cách nhanh chóng, hiệu quả và tiện lợi.
+Hiện nay đã có một số ứng dụng giúp đặt tài xế lái hộ tuy nhiên các ứng dụng này 
+còn một số nhược điểm như: giao diện phức tạp, không tiện lợi cho việc theo dõi di chuyển.
+Vì vậy ứng dụng này sẽ cung cấp tìm kiếm tài xế lái hộ cho người dùng một cách nhanh 
+chóng, hiệu quả và tiện lợi.
 \section{Mục tiêu và phạm vi đề tài}
 \label{section:1.2}
-Dựa trên những vấn đề đã nêu ở trên, mục tiêu của dự án này lá xây dựng một ứng dụng giúp đơn giản hóa quá trình tìm kiếm và kết nối giữa người cần tài xế lái xe hộ và các tài xế sẵn sàng hỗ trợ.
-Mục tiêu cốt lõi của ứng dụng bao gồm
+Dựa trên những vấn đề đã nêu ở trên, mục tiêu của dự án này lá xây dựng một ứng dụng giúp 
+đơn giản hóa quá trình tìm kiếm và kết nối giữa người cần tài xế lái xe hộ và các tài xế 
+sẵn sàng hỗ trợ.
+Mục tiêu cốt lõi của ứng dụng bao gồm:
 \begin{itemize}
   \item Cải thiện trải nghiệm người dùng: Tối ưu hóa giao diện và chức năng để người dùng dễ dàng đặt tài xế trong vài bước đơn giản.
   \item Nâng cao mức độ an toàn: Sử dụng công nghệ định vị GPS, theo dõi hành trình và hệ thống đánh giá tài xế để đảm bảo sự an tâm.
@@ -24,11 +34,22 @@ Mục tiêu cốt lõi của ứng dụng bao gồm
 
 \section{Định hướng giải pháp}
 \label{section:1.3}
-Để đạt được mục tiêu đề ra, ứng dụng sẽ được xây dựng dựa trên các giải pháp công nghệ hiện đại và chiến lược phát triển hợp lý. Ứng dụng sẽ được phát triển đa nền tảng bằng Flutter, đảm bảo hoạt động đồng nhất trên cả Android và iOS. Phần backend sử dụng NestJS với cấu trúc module hóa, tích hợp Firebase để cung cấp các tính năng thời gian thực như định vị, cập nhật trạng thái hành trình và lưu trữ dữ liệu người dùng. Hệ thống định vị Google Maps API sẽ được triển khai để hỗ trợ tìm kiếm địa điểm và theo dõi hành trình chính xác.
+Để đạt được mục tiêu đề ra, ứng dụng sẽ được xây dựng dựa trên các giải pháp 
+công nghệ hiện đại và chiến lược phát triển hợp lý. Ứng dụng sẽ được phát triển 
+đa nền tảng bằng Flutter, đảm bảo hoạt động đồng nhất trên cả Android và iOS. 
+Phần backend sử dụng NestJS với cấu trúc module hóa, tích hợp Firebase để cung 
+cấp các tính năng thời gian thực như định vị, cập nhật trạng thái hành trình và 
+lưu trữ dữ liệu người dùng. Hệ thống định vị Google Maps API sẽ được triển khai 
+để hỗ trợ tìm kiếm địa điểm và theo dõi hành trình chính xác.
 
-Về trải nghiệm người dùng, ứng dụng sẽ được thiết kế với giao diện đơn giản, thân thiện, giúp người dùng dễ dàng thao tác. Sau mỗi chuyến đi, người dùng có thể đánh giá tài xế để cải thiện chất lượng dịch vụ.
+Về trải nghiệm người dùng, ứng dụng sẽ được thiết kế với giao diện đơn giản, thân 
+thiện, giúp người dùng dễ dàng thao tác. Sau mỗi chuyến đi, người dùng có thể đánh 
+giá tài xế để cải thiện chất lượng dịch vụ.
 
-Để đảm bảo an toàn và minh bạch, ứng dụng sẽ yêu cầu tài xế và người dùng cung cấp thông tin cá nhân và giấy tờ liên quan để xác thực. Hành trình của người dùng sẽ được theo dõi theo thời gian thực. Thông tin tài xế và chuyến đi sẽ được lưu trữ trên Firebase, đảm bảo minh bạch và dễ dàng tra cứu khi cần.
+Để đảm bảo an toàn và minh bạch, ứng dụng sẽ yêu cầu tài xế và người dùng cung cấp 
+thông tin cá nhân và giấy tờ liên quan để xác thực. Hành trình của người dùng sẽ được 
+theo dõi theo thời gian thực. Thông tin tài xế và chuyến đi sẽ được lưu trữ trên Firebase, 
+đảm bảo minh bạch và dễ dàng tra cứu khi cần.
 
 \section{Bố cục đồ án}
 \label{section:1.4}
